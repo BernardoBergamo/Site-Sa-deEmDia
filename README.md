@@ -67,12 +67,13 @@ Verifique a instalação:
 ng version
 ```
 
-## Passo 3: Criando um Novo Projeto Angular
+## Passo 3: Instalando dependências
 
-Com o Angular CLI instalado, você pode criar um novo projeto Angular. Navegue até o diretório onde deseja criar o projeto e execute:
+Com o Angular CLI instalado, você pode instalar as dependências do projeto Angular. Navegue até o diretório onde deseja criar o projeto e execute:
 
 ```bash
-ng new meu-projeto-angular
+cd .\Unisinos.SaudeEmDia
+npm install
 ```
 
 Siga as instruções na tela para configurar o projeto.
@@ -83,7 +84,6 @@ Para iniciar o servidor de desenvolvimento e ver seu aplicativo em ação, naveg
 
 ```bash
 cd .\Unisinos.SaudeEmDia
-npm install
 npm start
 ```
 
