@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<header class="navegacao">
+  <h1 class="navegacao__titulo">Saúde em Dia</h1>
+  <div>
+    <a class="navegacao__itens" href="./index.html">Home</a>
+    <a class="botao" href="./inscricao.html">Inscreva-se</a>
+  </div>
+</header>
+
+<main class="inicio">
+  <div class="barra_pesquisa">
+    <h2 class="barra_pesquisa__titulo">O que você quer saber?</h2>
+    <input class="barra_pesquisa__pesquisa" type="text" placeholder="Faça sua busca aqui">
+    <button class="botao">Buscar</button>
+  </div>
+
+  <div class="conteudo">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+<footer>
+  &copy; 2024 Saúde em Dia. Todos os direitos reservados.
+</footer>
