@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.navegacao__titulo {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.navegacao__itens {
+    font-size: 20px;
+    padding: 14px 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.botao {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.padrao_artigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.padrao_artigo__titulo {
+    font-size: 64px;
+    text-align: center;
+}
+
+.padrao_artigo__subtitulo {
+    font-size: 24px;
+    color: #828282;
+    font-weight: 300;
+    text-align: center;
+}
+
+.padrao_artigo__imagem_principal {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.padrao_artigo_texto_posicao {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.padrao_artigo_texto {
+    width: 100%;
+    max-width: 842px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+footer {
+    background-color: #454545;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navegacao__titulo {
+        margin-bottom: 10px;
+    }
+
+    .padrao_artigo__titulo {
+        font-size: 48px;
+    }
+
+    .padrao_artigo__subtitulo {
+        font-size: 20px;
+    }
+
+    .padrao_artigo_texto {
+        font-size: 18px;
+    }
+}
