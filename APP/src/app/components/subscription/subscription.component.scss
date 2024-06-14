@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.navegacao__titulo {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.navegacao__itens {
+    font-size: 20px;
+    padding: 14px 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.botao {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.botao:hover, .navegacao__itens:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.Cadastro {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.Cadastro h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Cadastro label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.Cadastro input[type="text"], .Cadastro input[type="email"], .Cadastro input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
