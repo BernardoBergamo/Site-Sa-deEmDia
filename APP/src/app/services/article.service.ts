@@ -144,10 +144,20 @@ export class ArticleService {
     });
   }
 
-  GetById(id: string): Article {
-    let artigo: Article = this.articles[0];
+  GetById(id: string): Promise<Article> {
+    return new Promise((resolve, reject) => {
+      if (this.articles && this.articles.length > 0) {
+        const selectedArticle = this.articles.find(article => article.Id === id);
 
-    return artigo;
+        if (selectedArticle) {
+          resolve(selectedArticle);
+        } else {
+          reject('Artigo não encontrado');
+        }
+      } else {
+        reject('Nenhum artigo disponível');
+      }
+    });
   }
 
   GetByTitleLike(title: string): Article {

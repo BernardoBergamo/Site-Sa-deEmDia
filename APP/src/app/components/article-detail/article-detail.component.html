@@ -1,1 +1,24 @@
-<p>article-detail works!</p>
+<div class="container conteudo">
+  <div class="row conteudo__artigo">
+    <div class="col-6">
+      <img class="conteudo__artigo__img" src="{{article.ImageUrl}}" alt="{{article.Title}}">
+    </div>
+    <div class="col-6">
+      <section class="conteudo__artigo__texto">
+        <h2 class="conteudo__artigo__texto__titulo">{{article.Title}}</h2>
+        <p class="conteudo__artigo__texto__paragrafo">{{article.Headlight}}</p>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <section class="conteudo__artigo__texto">
+        <p class="conteudo__artigo__texto__paragrafo">{{article.Content}}</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="barra_pesquisa">
+  <button class="botao" [routerLink]="['/noticias']">Voltar</button>
+</div>
