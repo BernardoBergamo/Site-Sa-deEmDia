@@ -115,12 +115,31 @@ export class ArticleService {
 
   constructor() { }
 
-  GetAll(): Promise<Article[]> {
+  GetCount(): Promise<number> {
     return new Promise((resolve, reject) => {
       if (this.articles && this.articles.length > 0) {
-        resolve(this.articles);
+        resolve(this.articles.length);
       } else {
-        reject('No articles found');
+        reject('Artigo não encontrado');
+      }
+    });
+  }
+
+  GetAll(index: number, length: number): Promise<Article[]> {
+    return new Promise((resolve, reject) => {
+      if (this.articles && this.articles.length > 0) {
+        if (index < 0 || index >= this.articles.length) {
+          reject('Fora de índice');
+          return;
+        }
+
+        const endIndex = Math.min(index + length, this.articles.length);
+
+        const selectedArticles = this.articles.slice(index, endIndex);
+
+        resolve(selectedArticles);
+      } else {
+        reject('Artigo não encontrado');
       }
     });
   }

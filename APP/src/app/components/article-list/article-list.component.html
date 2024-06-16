@@ -1,0 +1,29 @@
+<div class="barra_pesquisa">
+  <h2 class="barra_pesquisa__titulo">O que você quer saber?</h2>
+  <input class="barra_pesquisa__pesquisa" type="text" placeholder="Faça sua busca aqui">
+  <button class="botao">Buscar</button>
+</div>
+
+<div class="barra_pesquisa">
+  <h3 class="barra_pesquisa__titulo" [hidden]="this.articles.length > 0 ? true : false">Nenhum resultado encontrado!</h3>
+</div>
+
+<div class="container conteudo">
+  <div class="row conteudo__artigo" [hidden]="this.articles.length == 0 ? true : false" *ngFor="let item of articles">
+    <div class="col-6">
+      <img class="conteudo__artigo__img" src="{{item.ImageUrl}}" alt="{{item.Title}}">
+    </div>
+    <div class="col-6">
+      <section class="conteudo__artigo__texto">
+        <h2 class="conteudo__artigo__texto__titulo">{{item.Title}}</h2>
+        <p class="conteudo__artigo__texto__paragrafo">{{item.Headlight | slice:0:300}}</p>
+        <a class="botao" [routerLink]="['/noticias/', item.Id]">Saiba mais</a>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="barra_pesquisa">
+  <button class="botao" [hidden]="this.articles.length >= this.articlesCount ? true : false"
+    (click)="this.GetArticles()">Mais...</button>
+</div>
