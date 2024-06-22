@@ -1,17 +1,21 @@
 <div class="container conteudo">
   <div class="row">
     <div class="col">
-      <section class="Cadastro">
+      <section class="Cadastro" [hidden]="this.subscriptionDone">
         <h2>Preencha os campos abaixo e cadastre-se</h2>
-        <form action="index.html" method="post" id="usuarios" target="">
-            <label for="usuario">Usuário</label><br>
-            <input type="text" id="usuario" name="usuario" placeholder="Crie um Nome de Usuário"><br><br>
-            <label for="email">E-Mail</label><br>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br><br>
-            <label for="senha">Senha</label><br>
-            <input type="password" id="senha" name="senha" placeholder="Crie uma senha"><br><br>
-            <input type="submit" class="botao" name="cadastrar">
+        <form id="usuarios" target="">
+          <label for="usuario">Usuário</label><br>
+          <input type="text" id="usuario" name="usuario" placeholder="Crie um Nome de Usuário"><br><br>
+          <label for="email">E-Mail</label><br>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br><br>
+          <label for="senha">Senha</label><br>
+          <input type="password" id="senha" name="senha" placeholder="Crie uma senha"><br><br>
+          <!-- <input class="botao" name="cadastrar"> -->
+          <a class="botao" (click)="this.Suscribe()">Enviar</a>
         </form>
+      </section>
+      <section class="Cadastro" [hidden]="!this.subscriptionDone">
+        <h2>Inscrição realizada com sucesso!</h2>
       </section>
     </div>
   </div>

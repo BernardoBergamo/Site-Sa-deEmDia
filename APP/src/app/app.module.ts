@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { QRCodeModule } from 'angularx-qrcode';
-import { ArticleListComponent } from './components/article-list/article-list.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ArticleListComponent,
+    AboutUsComponent,
     ArticleDetailComponent
   ],
   imports: [

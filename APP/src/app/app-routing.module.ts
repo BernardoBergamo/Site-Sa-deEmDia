@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { SubscriptionComponent } from './components/subscription/subscription.component';
-import { ArticleListComponent } from './components/article-list/article-list.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'inscricao', component: SubscriptionComponent },
-  { path: 'noticias', component: ArticleListComponent },
+  { path: 'sobre-nos', component: AboutUsComponent },
   { path: 'noticias/:id', component: ArticleDetailComponent }
 ];
 
