@@ -1,5 +1,12 @@
 # Unisinos - Saude Em Dia
 
+**Integrantes:**
+
+* Kayanne Vitória de Lima de Mello
+* Bernardo Bergamo Stange
+* Marcos Vinícius da Silva Carvalho
+* Andrew Paes da Silva
+
 **Repositório:**
 
 https://github.com/andrew-paes/Unisinos.SaudeEmDia
