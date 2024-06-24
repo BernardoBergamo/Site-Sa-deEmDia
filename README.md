@@ -1,3 +1,7 @@
+## Projeto Unisinos EAD - Desenvolvimento Web
+
+Esta é uma aplicação de um desafio proposto na matéria Desenvolvimento Web. Foi desenvolvido em Angular. 
+
 # Unisinos - Saude Em Dia
 
 **Integrantes:**
